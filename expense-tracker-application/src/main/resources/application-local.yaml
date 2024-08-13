@@ -1,0 +1,8 @@
+# #################### Microservice base configuration
+server.port: 8080
+
+# #################### No SQL configuration
+spring.data.mongodb.uri: mongodb://localhost:27017/ExpenseTrackerDB
+
+# #################### Core configuration
+db.populateOnStartUp: true

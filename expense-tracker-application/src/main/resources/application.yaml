@@ -1,0 +1,26 @@
+# #################### Microservice base configuration
+spring.application:
+  name: expense-tracker
+  version: 1.0.0-SNAPSHOT
+
+server:
+  port: 8080
+  ssl.enabled: false # disable https
+  servlet.context-path: /${spring.application.name}
+
+logging.level:
+  root: INFO
+  org.springframework: INFO
+  com.pilot2023.xt: INFO
+
+springdoc:
+  swagger-ui:
+    path: /
+
+# #################### No SQL configuration
+spring.data.mongodb:
+  uri: SECRET_MONGODB_ENDPOINT
+  auto-index-creation: true
+
+# #################### Core configuration
+db.populateOnStartUp: false

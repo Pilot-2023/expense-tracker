@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- #########################################################################  -->
+    <!-- #### P A R E N T _ P R O J E C T ######################################## -->
+    <!-- ######################################################################### -->
+
+    <parent>
+        <groupId>com.pilot2023</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+
+    <!-- #########################################################################  -->
+    <!-- #### P R O J E C T _ D E S C R I P T I O N ############################## -->
+    <!-- ######################################################################### -->
+
+    <groupId>com.pilot2023.xt</groupId>
+    <artifactId>expense-tracker</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>Xpense Tracker</name>
+    <description>Xpense Tracker Project</description>
+
+    <!-- #########################################################################  -->
+    <!-- #### P R O J E C T _ D E P E N D E N C I E S ############################ -->
+    <!-- ######################################################################### -->
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.pilot2023.xt</groupId>
+                <artifactId>expense-tracker-application</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.pilot2023.xt</groupId>
+                <artifactId>expense-tracker-core</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.pilot2023.xt</groupId>
+                <artifactId>expense-tracker-entrypoint-rest</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.pilot2023.xt</groupId>
+                <artifactId>expense-tracker-dataprovider-nosql</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <!-- #########################################################################  -->
+    <!-- #### P R O J E C T _ M O D U L E S ###################################### -->
+    <!-- ######################################################################### -->
+
+    <modules>
+        <module>expense-tracker-application</module>
+        <module>expense-tracker-core</module>
+        <module>expense-tracker-entrypoint-rest</module>
+        <module>expense-tracker-dataprovider-nosql</module>
+    </modules>
+
+    <!-- #########################################################################  -->
+    <!-- #### P R O J E C T _ P R O P E R T I E S ################################ -->
+    <!-- ######################################################################### -->
+
+    <properties>
+    </properties>
+
+    <!-- #########################################################################  -->
+    <!-- #### P R O J E C T _ B U I L D ########################################## -->
+    <!-- ######################################################################### -->
+
+    <build>
+    </build>
+
+</project>
