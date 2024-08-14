@@ -23,4 +23,4 @@ spring.data.mongodb:
   auto-index-creation: true
 
 # #################### Core configuration
-db.populateOnStartUp: false
+db.populateOnStartUp: true

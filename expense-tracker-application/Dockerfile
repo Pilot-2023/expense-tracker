@@ -1,4 +1,4 @@
-FROM 19-jdk-alpine3.16
+FROM openjdk:17-alpine3.14
 
 ENV SERVICE_NAME=expense-tracker \
     GROUP_NAME=expense-tracker \
